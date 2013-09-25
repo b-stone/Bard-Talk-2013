@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <link type="text/css"  rel="stylesheet" href="../js/highlight.js/styles/tomorrow-night-bright.css">
+    <script type="text/javascript" src="../js/highlight.js/highlight.pack.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    
+    <script type="text/javascript" src="../mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript" src="../js/d3.v3.js"></script>
+    <script type="text/javascript" src="../js/slide.js"></script>
+
+   <script type="text/javascript">
+      var substeps = ['one', 'two', '11', '12', '21', '22'];
+
+      function step(cur_step) {
+   		if(cur_step == '11') {
+		   $('table').highlight('3')
+		 } else if(cur_step == '12') {
+		   $('table').unhighlight('3')
+		   $('table').highlight('1')
+		 } else if(cur_step == '21') {
+		   $('table').unhighlight('1')
+		   $('table').highlight('11')
+		 } else if(cur_step == '22') {
+		   $('table').unhighlight('11')
+		   $('table').highlight('12') 
+		};
+		d3.select("#" + cur_step).style("display", "inherit")
+      };
+    </script>
+
+  </head>
+  <body>
+	
+    <h2>(A + B) + C = A + (B + C)</h2>
+
+	<div id="one" style="display:none;">
+		
+		<blockquote>
+		Addition in $M_2(\mathbb R)$ is associative.
+		</blockquote>
+
+	</div>
+		<br><br><br>
+	<div id="two" style="display:none;">
+		
+		<h1 class="small">Example</h1>
+		
+		<p>		
+		<!-- matrix expression begin -->
+		<table style="margin: 0px auto;" style="color:#000"><tr>
+			<td align="center" valign="center" width=30>(</td>
+			<td><table border=0 cellpadding=0 cellspacing=0px style="border-left:1px solid #000; border-right:1px solid #000; color:#000"><tr>
+			<td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td><td><table border=0 cellpadding=0 cellspacing=0 style="color:#000;">
+			<tr>
+			<td align="center" valign="center" width=30>3</td>
+			<td align="center" valign="center" width=30><span class="M11a">6</span></td>
+			</tr>
+			<tr>
+			<td align="center" valign="center" width=30>5</td>
+			<td align="center" valign="center" width=30>9</td>
+			</tr>
+			</table></td><td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td></tr></table></td>
+			<td align="center" valign="center" width=30>+</td>
+			<td><table border=0 cellpadding=0 cellspacing=0px style="border-left:1px solid #000; border-right:1px solid #000; color:#000"><tr>
+			<td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td><td><table border=0 cellpadding=0 cellspacing=0 style="color:#000;">
+			<tr>
+			<td align="center" valign="center" width=30>1</td>
+			<td align="center" valign="center" width=30>8</td>
+			</tr>
+			<tr>
+			<td align="center" valign="center" width=30>4</td>
+			<td align="center" valign="center" width=30>2</td>
+			</tr>
+			</table></td><td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td></tr></table></td>
+			<td align="center" valign="center" width=30>)</td>
+			<td align="center" valign="center" width=30>+</td>
+			<td><table border=0 cellpadding=0 cellspacing=0px style="border-left:1px solid #000; border-right:1px solid #000; color:#000"><tr>
+			<td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td><td><table border=0 cellpadding=0 cellspacing=0 style="color:#000;">
+			<tr>
+			<td align="center" valign="center" width=30>1</td>
+			<td align="center" valign="center" width=30>0</td>
+			</tr>
+			<tr>
+			<td align="center" valign="center" width=30>2</td>
+			<td align="center" valign="center" width=30>1</td>
+			</tr>
+			</table></td><td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td></tr></table></td>
+			<td align="center" valign="center" width=30>=</td>
+			<td><table border=0 cellpadding=0 cellspacing=0px style="border-left:1px solid #000; border-right:1px solid #000; color:#000"><tr>
+			<td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td><td><table border=0 cellpadding=0 cellspacing=0 style="color:#000;">
+			<tr>
+			<td align="center" valign="center" width=30>5</td>
+			<td align="center" valign="center" width=30>14</td>
+			</tr>
+			<tr>
+			<td align="center" valign="center" width=30>11</td>
+			<td align="center" valign="center" width=30>12</td>
+			</tr>
+			</table></td><td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td></tr></table></td>
+			</tr></table>
+			<!-- matrix expression end -->
+<br><br>
+			<!-- matrix expression begin -->
+			<table style="margin: 0px auto;" style="color:#000"><tr>
+			<td><table border=0 cellpadding=0 cellspacing=0px style="border-left:1px solid #000; border-right:1px solid #000; color:#000"><tr>
+			<td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td><td><table border=0 cellpadding=0 cellspacing=0 style="color:#000;">
+			<tr>
+			<td align="center" valign="center" width=30>3</td>
+			<td align="center" valign="center" width=30>6</td>
+			</tr>
+			<tr>
+			<td align="center" valign="center" width=30>5</td>
+			<td align="center" valign="center" width=30>9</td>
+			</tr>
+			</table></td><td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td></tr></table></td>
+			<td align="center" valign="center" width=30>+</td>
+			<td align="center" valign="center" width=30>(</td>
+			<td><table border=0 cellpadding=0 cellspacing=0px style="border-left:1px solid #000; border-right:1px solid #000; color:#000"><tr>
+			<td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td><td><table border=0 cellpadding=0 cellspacing=0 style="color:#000;">
+			<tr>
+			<td align="center" valign="center" width=30>1</td>
+			<td align="center" valign="center" width=30>8</td>
+			</tr>
+			<tr>
+			<td align="center" valign="center" width=30>4</td>
+			<td align="center" valign="center" width=30>2</td>
+			</tr>
+			</table></td><td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td></tr></table></td>
+			<td align="center" valign="center" width=30>+</td>
+			<td><table border=0 cellpadding=0 cellspacing=0px style="border-left:1px solid #000; border-right:1px solid #000; color:#000"><tr>
+			<td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td><td><table border=0 cellpadding=0 cellspacing=0 style="color:#000;">
+			<tr>
+			<td align="center" valign="center" width=30>1</td>
+			<td align="center" valign="center" width=30>0</td>
+			</tr>
+			<tr>
+			<td align="center" valign="center" width=30>2</td>
+			<td align="center" valign="center" width=30>1</td>
+			</tr>
+			</table></td><td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td></tr></table></td>
+			<td align="center" valign="center" width=30>)</td>
+			<td align="center" valign="center" width=30>=</td>
+			<td><table border=0 cellpadding=0 cellspacing=0px style="border-left:1px solid #000; border-right:1px solid #000; color:#000"><tr>
+			<td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td><td><table border=0 cellpadding=0 cellspacing=0 style="color:#000;">
+			<tr>
+			<td align="center" valign="center" width=30>5</td>
+			<td align="center" valign="center" width=30>14</td>
+			</tr>
+			<tr>
+			<td align="center" valign="center" width=30>11</td>
+			<td align="center" valign="center" width=30>12</td>
+			</tr>
+			</table></td><td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td></tr></table></td>
+			</tr></table>
+			<!-- matrix expression end -->
+		</p>
+		
+	</div>
+	
+
+
+		
+
+
+
+
+
+	
+
+
+
+  </body>
+</html>
