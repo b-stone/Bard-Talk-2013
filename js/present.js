@@ -42,12 +42,12 @@
           break;
         }
 		case 65: { // additive props
-          currentIndex = 7;
+          currentIndex = 8;
           step(0);
           break;
         }
 		case 83: { // additive props
-          currentIndex = 14;
+          currentIndex = 15;
           step(0);
           break;
         }
@@ -59,7 +59,7 @@
         }
 		case 40: { // down arrow
 		  twoDim = currentIndex; // current;
-          currentIndex = 21;
+          currentIndex = 24;
           step(0);
           break;
         }

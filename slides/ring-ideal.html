@@ -17,7 +17,7 @@
     <script type="text/javascript" src="../js/slide.js"></script>
 
    <script type="text/javascript">
-      var substeps = ['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
+      var substeps = ['one', 'two'];
 
       function step(cur_step) {
         d3.select("#" + cur_step).style("display", "inherit")
@@ -27,26 +27,28 @@
   </head>
   <body>
 	
-    <h2>Concerning Scalars</h2>
+    <h2>Rings and Ideals</h2>
 
-	<h1 id="one" class="small" style="display:none;">
-		We have observed the following:
-	</h1>
+<br>
+
+	<div id="one" class="mytab" style="display:none;">
+	<h1 class="small">Ring</h1>
+	<p class="mytab">
+		Think vector space with multiplication. <br> I.e. $M_2(\mathbb R)$ or $\mathbb Z$.
+	</p>
+	</div>
+	
+<br>
 		
-		<p class="mytab">		
-			<ul class="a, mytab">
-			  <li id="two" style="display:none"><em>Closure:</em>&nbsp&nbsp r * A = A</li><br>
-			  <li id="three" style="display:none"><em>Distributivity I:</em>&nbsp&nbsp r * (A + B) = r * A + r * B</li><br>
-			  <li id="four" style="display:none"><em>Distributivity II:</em>&nbsp&nbsp (r + s) * A = r * A + s * B</li><br>
-			  <li id="five" style="display:none"><em>Associativity:</em>&nbsp&nbsp r * (s * A) = (r * s) * A</li><br>
-			  <li id="six" style="display:none"><em>Identity:</em>&nbsp&nbsp 1 * A = A</li>			
-			</ul>
-		</p>
+	<div id="two" class="mytab" style="display:none;">
+		<h1 class="small">Ideal</h1>
+			<p class="mytab">
+				Think subspaces inside a ring. I.e. multiples of $\displaystyle \begin{pmatrix} 1 & 1 \\ 0 & 1  \end{pmatrix}$ or multiples of $2$.
+				</p>
 
-	<p id="seven" style="display:none;">
-	<i>Note: This is the topic of Math 3** (Computational Commutative Algebra)</i>	
- 	</p>
-
+	</div>
+	
+		
 
 		
 
