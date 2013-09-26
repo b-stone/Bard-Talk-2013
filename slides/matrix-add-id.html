@@ -17,7 +17,7 @@
     <script type="text/javascript" src="../js/slide.js"></script>
 
    <script type="text/javascript">
-      var substeps = ['one', 'two', 'three'];
+      var substeps = ['one', 'two'];
 
       function step(cur_step) {
         d3.select("#" + cur_step).style("display", "inherit")
@@ -27,16 +27,20 @@
   </head>
   <body>
 	
-    <h2>What is a Matrix?</h2>
+    <h2>A + 0 = A</h2>
 
-	<p id="one" class="mytab" style="display:none;"> 
-		A matrix is a rectangular array of numbers, symbols, or expressions, arranged in rows and columns.
-	</p>
-		
-	<div id="two" class="mytab" style="display:none;">
-		<h1 class="small">Examples</h1>
-		
+	<div id="one" style="display:none;">
+		<blockquote>
+		The zero matrix in $M_2(\mathbb R)$ an additive identity.
+		</blockquote>
 
+	</div>
+		<br><br><br>
+	<div id="two" style="display:none;">
+		
+		<h1 class="small">Example</h1>
+		
+		<p>		
 		<!-- matrix expression begin -->
 		<table style="margin: 0px auto;" style="color:#000"><tr>
 			<td><table border=0 cellpadding=0 cellspacing=0px style="border-left:1px solid #000; border-right:1px solid #000; color:#000"><tr>
@@ -44,71 +48,42 @@
 			<tr>
 			<td align="center" valign="center" width=50>1</td>
 			<td align="center" valign="center" width=50>2</td>
-			<td align="center" valign="center" width=50>3</td>
-			<td align="center" valign="center" width=50>4</td>
 			</tr>
 			<tr>
 			<td align="center" valign="center" width=50>5</td>
-			<td align="center" valign="center" width=50>6</td>
-			<td align="center" valign="center" width=50>7</td>
 			<td align="center" valign="center" width=50>8</td>
 			</tr>
 			</table></td><td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td></tr></table></td>
-			<td align="center" valign="center" width=50>,</td>
+			<td align="center" valign="center" width=50>+</td>
 			<td><table border=0 cellpadding=0 cellspacing=0px style="border-left:1px solid #000; border-right:1px solid #000; color:#000"><tr>
 			<td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td><td><table border=0 cellpadding=0 cellspacing=0 style="color:#000;">
 			<tr>
-			<td align="center" valign="center" width=50>A</td>
-			<td align="center" valign="center" width=50>B</td>
+			<td align="center" valign="center" width=50>0</td>
+			<td align="center" valign="center" width=50>0</td>
 			</tr>
 			<tr>
-			<td align="center" valign="center" width=50>C</td>
-			<td align="center" valign="center" width=50>D</td>
+			<td align="center" valign="center" width=50>0</td>
+			<td align="center" valign="center" width=50>0</td>
 			</tr>
+			</table></td><td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td></tr></table></td>
+			<td align="center" valign="center" width=50>=</td>
+			<td><table border=0 cellpadding=0 cellspacing=0px style="border-left:1px solid #000; border-right:1px solid #000; color:#000"><tr>
+			<td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td><td><table border=0 cellpadding=0 cellspacing=0 style="color:#000;">
 			<tr>
 			<td align="center" valign="center" width=50>1</td>
 			<td align="center" valign="center" width=50>2</td>
 			</tr>
 			<tr>
-			<td align="center" valign="center" width=50>3</td>
-			<td align="center" valign="center" width=50>4</td>
-			</tr>
-			</table></td><td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td></tr></table></td>
-			<td align="center" valign="center" width=50>,</td>
-			<td><table border=0 cellpadding=0 cellspacing=0px style="border-left:1px solid #000; border-right:1px solid #000; color:#000"><tr>
-			<td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td><td><table border=0 cellpadding=0 cellspacing=0 style="color:#000;">
-			<tr>
-			<td align="center" valign="center" width=50>g</td>
-			<td align="center" valign="center" width=50>h</td>
-			</tr>
-			<tr>
-			<td align="center" valign="center" width=50>i</td>
-			<td align="center" valign="center" width=50>j</td>
-			</tr>
-			</table></td><td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td></tr></table></td>
-			<td align="center" valign="center" width=50>,</td>
-			<td><table border=0 cellpadding=0 cellspacing=0px style="border-left:1px solid #000; border-right:1px solid #000; color:#000"><tr>
-			<td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td><td><table border=0 cellpadding=0 cellspacing=0 style="color:#000;">
-			<tr>
-			<td align="center" valign="center" width=50>2</td>
-			<td align="center" valign="center" width=50>0.1</td>
-			</tr>
-			<tr>
-			<td align="center" valign="center" width=50>1.4</td>
-			<td align="center" valign="center" width=50>1</td>
+			<td align="center" valign="center" width=50>5</td>
+			<td align="center" valign="center" width=50>8</td>
 			</tr>
 			</table></td><td style ="border-top:1px solid #000; border-bottom:1px solid #000;">&nbsp</td></tr></table></td>
 			</tr></table>
 			<!-- matrix expression end -->
-
+		</p>
 	</div>
 	
-	<br>
-		
-	<p id="three" class="mytab" style="display:none;">
-		We will only be concerned with 2 by 2 matrices with real entries, $M_2(\mathbb{R})$.
-	</p>
-		
+
 
 		
 

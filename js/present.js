@@ -41,6 +41,16 @@
           step(0);
           break;
         }
+		case 65: { // additive props
+          currentIndex = 7;
+          step(0);
+          break;
+        }
+		case 83: { // additive props
+          currentIndex = 14;
+          step(0);
+          break;
+        }
 		case 38: { // up arrow
 //		  next = next.attr("id", "twoDim");// twoDim;
 		  currentIndex = twoDim;
@@ -49,15 +59,11 @@
         }
 		case 40: { // down arrow
 		  twoDim = currentIndex; // current;
-          currentIndex = 5;
+          currentIndex = 21;
           step(0);
           break;
         }
-        case 83: { // s
-          sendSubstep();
-          break;
-        }
-        case 84: { // t
+      case 84: { // t
           currentIndex = slides.length - 1;
           step(0);
           break;
